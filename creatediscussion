@@ -1,0 +1,31 @@
+
+type discussion @rootEntity {     
+user: String
+Qus : String
+dated:String
+
+}
+
+
+ mutation {
+  creatediscussion(input:{user:"GOUNIVALLA CHIRANJEEVI",Qus:"when we get hackathon final results" ,dated: "2 days ago"})
+  {Qus}
+  }  
+  
+     mutation {
+  creatediscussion(input:{user:"DEEPAK SAHOO",Qus:"hi we are not able to submit the code.Because the submission ended before 15 mins .The time is 11:50 pm still we can not submit" ,dated: "3 days ago"})
+  {Qus}
+  }
+  
+  
+     mutation {
+  creatediscussion(input:{user:"Karthick Aravindan",Qus:"Is we should create our own data set or we should train my model in sample data" ,dated: "1 month ago"})
+  {Qus}
+  }
+  
+  
+  
+     mutation {
+  creatediscussion(input:{user:"Imaya Bharathi ",Qus:"Course suggestions for a  Noob@ML :P" ,dated: "1 month ago"})
+  {Qus}
+  }
