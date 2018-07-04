@@ -34,36 +34,36 @@ mutation {
   }
   ---------------------------------------------------------------------
   mutation {
-  createusers(input:{ userID:"1", email:"ram.rockstar@gmail.com",name:"RamKumar",
+  createusers(input:{ email:"ram.rockstar@gmail.com",name:"RamKumar",
   pwd :"!ASFHG5566%%%%33#==~^DF",
   status:"1",
   goldBadge:"23",
   silverBadge:"72",
   bronzeBadge:"12",
-  achievements : "87141",
-  skills :["85059","85059","85059"],
+  achievements : "1",
+  skills :["1"],
   totalExp :"25 Years  2 Months"
-  companies:[ "Verizon","JIO","GE","Google"]
-  college :["IIT","IIM","IIS"]
+  companies:["Verizon,JIO,GE,Google"]
+  college :["IIT,IIM,IIS"]
   })
-  {userID,name,skills{skillName},achievements{event{eventName},rank},companies}
+  {name,skills{skillName},achievements{event{eventName},rank},companies}
   }
   
   
   mutation {
-  createusers(input:{ userID:"2", email:"naveen.sizleer@gmail.com",name:"Naveen",
+  createusers(input:{email:"naveen.sizleer@gmail.com",name:"Naveen",
   pwd :"!@QETHJG5566%%%%33#+++~^]6",
   status:"1",
   goldBadge:"03",
   silverBadge:"42",
   bronzeBadge:"11",
-  achievements : "87069",
-  skills :["85059","85059","85059"],
+  achievements : "1",
+  skills :["1"],
   totalExp :"11 Years  8 Months"
-  companies:[ "Verizon","TCS"]
+  companies:[ "Verizon,TCS"]
   college :["IIT"]
   })
-  {userID,name,skills{skillName},achievements{event{eventName},rank},companies}
+  {name,skills{skillName},achievements{event{eventName},rank},companies}
   }
 ------------------------------------------------------------------------------------------
   mutation {
