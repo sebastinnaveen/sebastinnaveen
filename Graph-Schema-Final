@@ -1,0 +1,37 @@
+type users @rootEntity { 
+		email  : String
+		name:String
+		pwd  : String		
+		status  : String
+		goldBadge: String
+		silverBadge: String		
+		bronzeBadge: String
+		achievements : achievement @relation
+		skills :[skill] @relation
+		totalExp:String
+		companies :[String]
+		college:[String]	
+		
+}
+
+type achievement @rootEntity {
+
+	event:  [events] @relation
+	rank: String
+
+}
+
+type skill @rootEntity {
+	
+	skillName: String
+}
+
+type leaderboard  @rootEntity 
+{
+	rank:String
+	participants : String 	
+	totalScore : String
+	attempts : 	String
+	lastSubmitted : String
+}
+
