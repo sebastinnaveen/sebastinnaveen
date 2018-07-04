@@ -29,3 +29,13 @@ dated:String
   creatediscussion(input:{user:"Imaya Bharathi ",Qus:"Course suggestions for a  Noob@ML :P" ,dated: "1 month ago"})
   {Qus}
   }
+
+
+query
+{
+  alldiscussions(orderBy:user_ASC) {
+   Qus,
+    user,
+    dated
+}
+}
